@@ -48,6 +48,7 @@
 .study-buttons {
     display: flex;
     flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+    flex-direction: row; /* Stack buttons horizontally */
     justify-content: center; /* Center buttons horizontally */
     margin-top: 0.5rem; /* Adjust spacing between text and buttons */
 }
@@ -76,26 +77,6 @@
 }
 
 /* CSS for the BibTeX section */
-/* .bibtex-section { */
-    /* display: block; Initially show the BibTeX section */
-    /* max-width: 100%; Ensure BibTeX text doesn't exceed parent width */
-    /* overflow-x: auto; Enable horizontal scrolling for BibTeX text */
-    /* border: 1px solid #ccc; Add a faint gray border to the BibTeX section */
-    /* padding: 8px; Add padding to the BibTeX section */
-    /* background-color: #f0f0f0; Add a light gray background to the BibTeX section */
-    /* position: absolute; Position the BibTeX section absolutely */
-    /* left: 0; Align to the left */
-    /* top: 100%; Position below the study content */
-    /* width: 100%; Full width of the parent container */
-    /* z-index: 1; Ensure BibTeX section is above other content */
-
-    /* Transition effect for max-height */
-    /* max-height: none; Set max-height to none initially */
-    /* overflow: hidden; */
-    /* transition: max-height 0.3s ease-in-out; */
-/* } */
-
-/* CSS for the BibTeX section */
 .bibtex-section {
     display: none; /* Initially hide the BibTeX section */
     max-width: 100%; /* Ensure BibTeX text doesn't exceed parent width */
@@ -106,7 +87,6 @@
     width: 100%; /* Set width to 100% */
     position: absolute; /* Position the BibTeX section absolutely */
     left: 0; /* Align to the left */
-    top: 50%; /* Position below the study content */
     width: 100%; /* Full width of the parent container */
     opacity: 0; /* Initially set opacity to 0 */
     transition: opacity 1.0s ease; /* Add a transition to opacity */
@@ -123,7 +103,6 @@
 
 .copy-button {
     position: absolute;
-    top: 88%; /* Adjust the top position as needed */
     right: 8px; /* Adjust the right position as needed */
     opacity: 0; /* Initially set opacity to 0 */
     z-index: 2;
