@@ -83,6 +83,20 @@ nav ul li a {
     margin: 5px 0;
 }
 
+@media (max-width: 545px) {
+    .profile img {
+        max-width: 150px; /* Adjust the desired width for smaller screens */
+    }
+
+    .info h1 {
+        font-size: 2.0rem;
+    }
+
+    .info p {
+        font-size: 1.0rem;
+    }
+}
+
 /* Style the social media icons */
 .social-icons {
     margin-top: 10px;
