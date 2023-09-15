@@ -113,14 +113,16 @@ nav ul li a {
 
 .icon {
     display: inline-block;
-    width: 24px; /* Adjust the width and height as needed */
+    width: 24px;
     height: 24px;
-    fill: #000C29; /* Inherit the parent's text color for the SVG fill */
+    fill: #000C29;
 }
 
+
 .icon:hover, .icon:focus{
-    fill: #E66E29; /* Change the SVG fill on mouse-over */
-}
+    fill: #E66E29;
+} 
+
 
 a {
     color: #3C6E71;
@@ -130,13 +132,6 @@ a {
 a:focus, a:hover {
     color: #E66E29;
     text-decoration:none;
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: light) {
-    .icon, a {
-        filter: invert(1); /* Invert the colors */
-    }
 }
 
 .container h2 {
