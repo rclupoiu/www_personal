@@ -2,7 +2,7 @@
 
 [robertlupoiu.com](http://www.robertlupoiu.com)
 
-Wanting a **minimalist, future-proof website**, I worked with [ChatGPT-3.5](https://chat.openai.com) to generate raw HTML, CSS, and JavaScript (with no frameworks, to avoid future versioning obsolescence issues). The website currently contains a section for a profile picture with a link to socials, a bio, and a list of publications. The publications section allows for a representative image and optional links to a PDF, the publisher's website, a video, the code repository, data used in the study, a project website, and a slideset. Each study also has a BibTeX citation button, which allows the user to easily copy the citation to their clipboard, **making citing the articles as easy and painless as possible**.
+This **minimalist, future-proof website**, is composed of only raw HTML, CSS, and JavaScript (with no frameworks, to avoid future versioning obsolescence issues). The website currently contains a section for a profile picture with a link to socials, a bio, and a list of publications. The publications section allows for a representative image and optional links to a PDF, the publisher's website, a video, the code repository, data used in the study, a project website, and a slideset. Each study also has a BibTeX citation button, which allows the user to easily copy the citation to their clipboard, **making citing the articles as easy and painless as possible**.
 
 ## How to adapt for your own use
 
@@ -26,6 +26,12 @@ After forking this repository, perform the following steps to adapt the website 
     2. Upload the PDF for each study you want to list on the website in `/publications/pdfs/`
     3. In `/publications/list.js`, Remove my publications and add your own. Note that there is an empty template at the bottom of the file (lines 148-174) you can use. The following fields are required: `imageSrc`, `title`, `authors`, `journal`, `bibtexData`, `selected`. The following fields are optional: `pdfLink`, `journalLink`, `videoLink`, `codeLink`, `dataLink`, `websiteLink`, `slidesLink`. The `image` field should be the directory of the representative image you uploaded in step 2.1. The `pdf` field should be the directory of the PDF you uploaded in step 2.2. The `videoLink`, `codeLink`, `dataLink`, `websiteLink`, and `slidesLink` fields should be the URLs to the respective resources. If you don't have a URL for a particular resource, just leave the field blank and the button will not appear for that listing. If the `selected` field is set to `true`, the study will be listed in the "Selected" tab. All publications will be listed in the "All" tab.
 
+## Last Updated Functionality
+
+The website includes a "Last updated" date at the bottom of the page. This date is automatically generated using JavaScript's `document.lastModified` property, which reflects when the HTML file was last modified. To ensure this date stays current:
+
+**Important**: Whenever you make changes to any part of your website (CSS, JavaScript, publications list, etc.), you should also make a small change to the `index.html` file and re-upload it (e.g., adding and removing a space character). The simplest way to do this is using the `touch` command in your terminal.
+
 ## How to host for free (for Stanford students/employees)
 
 Stanford University IT provides free WWW hosting for Stanford students and employees, with a URL of the form `https://web.stanford.edu/~yoursunetid/`.
@@ -48,7 +54,7 @@ https://pages.github.com
 - Website design adapted from [Martin Saveski](http://www.martinsaveski.com/)
 
 ### Icons
-- X (FKA Twitter), GitHub, and LinkedIn logos from [Font Awesome](https://fontawesome.com/)
+- X GitHub, and LinkedIn logos from [Font Awesome](https://fontawesome.com/)
 - Google Scholar logo from [icons8](https://icons8.com/)
 
 ### Tabs code

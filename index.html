@@ -98,18 +98,16 @@
     <section id="bio">
         <div class="container">
             <!-- <h2>Bio</h2> -->
-            <p>I am a PhD student in <a href="https://ee.stanford.edu/" target="_blank">Electrical Engineering</a> at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>. 
-                I am co-advised by <a href="https://engineering.stanford.edu/people/jonathan-fan" target="_blank">Jonathan Fan</a> 
-                and <a href="https://profiles.stanford.edu/ivan-soltesz" target="_blank">Ivan Soltesz</a>, and funded by a 
-                <a href="https://knight-hennessy.stanford.edu/" target="_blank">Knight-Hennessy Scholarship</a>.
-                My research has been focused on developing machine learning and optimization techniques in a broad range of scientific
-                domains, such as computational electromagnetics, nanophotonics, and quantum dot computing.
+            <p>
+                I am the technical co-founder of <a href="https://www.omihealth.ai" target="_blank">Omi AI</a>, a startup building clinical superintelligence at scale. 
+                I am a PhD candidate in <a href="https://ee.stanford.edu/" target="_blank">Electrical Engineering</a> at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>,
+                co-advised by <a href="https://engineering.stanford.edu/people/jonathan-fan" target="_blank">Jonathan Fan</a> 
+                and <a href="https://profiles.stanford.edu/ivan-soltesz" target="_blank">Ivan Soltesz</a>. My PhD research is generously supported by the <a href="https://knight-hennessy.stanford.edu/" target="_blank">Knight-Hennessy Scholars</a> program.
                 <br>
                 <br>
-                I am currently focusing on research thrusts that are centered around pushing the boundaries of applied machine 
-                learning in applied physics and neuroscience. Most recently, I have been developing ultra-fast and general 
-                partial differential equation surrogate solvers to power the design of the next generation of high-performance 
-                optical imaging systems.
+                My most recent work has been focused on pushing the boundaries of optical engineering and neuroscience using innovations in machine learning and applied physics.
+                Most recently, I have been working on developing agentic reasoning frameworks that laverage a new class of ultra-fast and general Maxwell surrogate solvers to
+                power the automated design of multifunction, multi-wavelength metasurfaces in near real-time (as opposed to weeks of manual specialized design work).
             </p>
         </div>
     </section>
@@ -151,10 +149,24 @@
             <p>
                 This website's code is available on <a href="https://github.com/rclupoiu/www_personal" target="_blank">GitHub</a>. I hope you find it helpful!
                 <br>
-                Thank you to <a href="http://martinsaveski.com/ " target="_blank">Martin</a> for design inspiration and to <a href="https://chat.openai.com" target="_blank">ChatGPT-3.5</a> for coding support.
+                <br>
+                <span id="last-updated">Last updated: </span>
+                <br>
+                For most up-to-date publication list, check <a href="https://scholar.google.com/citations?user=exZV_fIAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
             </p>
 
         </div>
     </section>
+
+    <script>
+        // Add last updated date
+        document.addEventListener('DOMContentLoaded', function() {
+            const lastUpdated = document.getElementById('last-updated');
+            // Format the date as Month Day, Year
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = new Date(document.lastModified).toLocaleDateString('en-US', options);
+            lastUpdated.textContent = `Last updated: ${formattedDate}`;
+        });
+    </script>
 </body>
 </html>
