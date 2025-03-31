@@ -1,6 +1,114 @@
 // publications/list.js
 const publicationsList = [
 
+    //A multi-agentic framework for real-time,  autonomous freeform metasurface design
+    {
+        imageSrc: 'publications/images/lupoiu2025metachat.png',
+        title: 'A multi-agentic framework for real-time,  autonomous freeform metasurface design',
+        authors: '<strong>Robert Lupoiu</strong>, Yixuan Shao, Tianxiang Dai, Chenkai Mao, Kofi Edee, and Jonathan A. Fan',
+        journal: 'arXiv, 2025.',
+        pdfLink: 'publications/pdfs/lupoiu2025metachat.pdf',
+        journalLink: 'https://arxiv.org/abs/2503.20479',
+        videoLink: '',
+        codeLink: 'https://github.com/jonfanlab/metachat',
+        dataLink: '',
+        websiteLink: '',
+        slidesLink: '',
+        bibtexData: 
+`@misc{lupoiu2025metachat,
+	title = {A multi-agentic framework for real-time, autonomous freeform metasurface design},
+	url = {http://arxiv.org/abs/2503.20479},
+	doi = {10.48550/arXiv.2503.20479},
+	publisher = {arXiv},
+	author = {Lupoiu, Robert and Shao, Yixuan and Dai, Tianxiang and Mao, Chenkai and Edee, Kofi and Fan, Jonathan A.},
+	year = {2025},
+	note = {arXiv:2503.20479 [physics]},
+}`,
+        selected: true, // Indicate whether the study is selected
+    },
+
+    //Towards General Neural Surrogate Solvers with Specialized Neural Accelerators
+    {
+        imageSrc: 'publications/images/mao2024snapddm.png',
+        title: 'Towards General Neural Surrogate Solvers with Specialized Neural Accelerators',
+        authors: 'Chenkai Mao, <strong>Robert Lupoiu</strong>, Tianxiang Dai, Mingkun Chen, and Jonathan A. Fan',
+        journal: 'arXiv, 2024.',
+        pdfLink: 'publications/pdfs/mao2024snapddm.pdf',
+        journalLink: 'https://arxiv.org/abs/2405.02351',
+        videoLink: '',
+        codeLink: '',
+        dataLink: '',
+        websiteLink: '',
+        slidesLink: '',
+        bibtexData: 
+`@misc{mao2024snapddm,
+	title = {Towards {General} {Neural} {Surrogate} {Solvers} with {Specialized} {Neural} {Accelerators}},
+	url = {http://arxiv.org/abs/2405.02351},
+	doi = {10.48550/arXiv.2405.02351},
+	publisher = {arXiv},
+	author = {Mao, Chenkai and Lupoiu, Robert and Dai, Tianxiang and Chen, Mingkun and Fan, Jonathan A.},
+	year = {2024},
+	note = {arXiv:2405.02351 [cs]},
+}`,
+        selected: true, // Indicate whether the study is selected
+    },
+
+    //Multifunctional Spaceplates for Optical Aberration Correction
+    {
+        imageSrc: 'publications/images/shao2024spaceplates.png',
+        title: 'Multifunctional Spaceplates for Optical Aberration Correction',
+        authors: 'Yixuan Shao, <strong>Robert Lupoiu</strong>, Jiaqi Jiang, You Zhou, Tom D. Milster, and Jonathan A. Fan',
+        journal: 'ACS Photonics, 2024.',
+        pdfLink: 'publications/pdfs/shao2024spaceplates.pdf',
+        journalLink: 'https://pubs.acs.org/doi/10.1021/acsphotonics.4c00086',
+        videoLink: '',
+        codeLink: '',
+        dataLink: '',
+        websiteLink: '',
+        slidesLink: '',
+        bibtexData: 
+`@article{shao_multifunctional_2024,
+	title = {Multifunctional {Spaceplates} for {Optical} {Aberration} {Correction}},
+	volume = {11},
+	url = {https://pubs.acs.org/doi/10.1021/acsphotonics.4c00086},
+	doi = {10.1021/acsphotonics.4c00086},
+	number = {4},
+	journal = {ACS Photonics},
+	author = {Shao, Yixuan and Lupoiu, Robert and Jiang, Jiaqi and Zhou, You and Milster, Tom D. and Fan, Jonathan A.},
+	year = {2024},
+	pages = {1753--1760},
+}`,
+        selected: false, // Indicate whether the study is selected
+    },
+
+    //Atomically Precise Manufacturing of Silicon Electronics
+    {
+        imageSrc: 'publications/images/pitters2024atomically.png',
+        title: 'Atomically Precise Manufacturing of Silicon Electronics',
+        authors: 'Jason Pitters, Jeremiah Croshaw, Roshan Achal, Lucian Livadaru, Samuel Ng, <strong>Robert Lupoiu</strong>, Taras Chutora, Talena Huff, Konrad Walus, and Robert A. Wolkow',
+        journal: 'ACS Nano, 2024.',
+        pdfLink: 'publications/pdfs/pitters2024atomically.pdf',
+        journalLink: 'https://pubs.acs.org/doi/10.1021/acsnano.3c10412',
+        videoLink: '',
+        codeLink: '',
+        dataLink: '',
+        websiteLink: '',
+        slidesLink: '',
+        bibtexData: 
+`@article{pitters2024atomically,
+	title = {Atomically {Precise} {Manufacturing} of {Silicon} {Electronics}},
+	volume = {18},
+	url = {https://pubs.acs.org/doi/10.1021/acsnano.3c10412},
+	doi = {10.1021/acsnano.3c10412},
+	number = {9},
+	journal = {ACS Nano},
+	author = {Pitters, Jason and Croshaw, Jeremiah and Achal, Roshan and Livadaru, Lucian and Ng, Samuel and Lupoiu, Robert and Chutora, Taras and Huff, Taleana and Walus, Konrad and Wolkow, Robert A.},
+	year = {2024},
+	pages = {6766--6816},
+}`,
+        selected: false, // Indicate whether the study is selected
+    },
+
     //Machine Learning Advances in Computational Electromagnetics (Wiley book chapter)
     {
         imageSrc: 'publications/images/lupoiu2023machine.png',
@@ -141,7 +249,7 @@ publisher = {IEEE},
 doi = {10.1109/TNANO.2020.2966162},
 URL = {https://ieeexplore.ieee.org/abstract/document/8963859},
 }`,
-        selected: true, // Indicate whether the study is selected
+        selected: false, // Indicate whether the study is selected
     },
 
     
